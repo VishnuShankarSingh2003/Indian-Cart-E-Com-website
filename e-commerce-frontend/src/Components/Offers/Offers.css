@@ -1,0 +1,104 @@
+.offers{
+    margin: 0px auto;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8%;
+    /* margin-bottom: 150px; */
+    background: #0d1117;
+}
+
+.offers-left h1{
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 600;
+}
+.offers-left p{
+    color: #c1c1c1;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.offers-right img{
+    width: 320px;
+    padding-top: 20px;
+}
+
+.btn {
+    border: none;
+    width: 15em;
+    height: 5em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #1b1a1c;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+    margin-top: 30px;
+    background: linear-gradient(to right,rgb(185, 34, 255),rgb(255, 122, 34));
+  }
+  
+  .sparkle {
+    fill: #ffffff;
+    transition: all 800ms ease;
+  }
+  
+  .text {
+    font-weight: 600;
+    color: #fff8f8;
+    font-size: medium;
+  }
+  
+  .btn:hover {
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 180px 0px #ff1797;
+    transform: translateY(-2px);
+  }
+  
+  .btn:hover .text {
+    color: white;
+  }
+  
+  .btn:hover .sparkle {
+    fill: white;
+    transform: scale(1.2);
+  } 
+/* ----- media query----- */
+
+@media(max-width:1280px){
+    .offers-right img{
+        width: 300px;
+    }
+    .offers-left h1{
+        font-size: 40px;
+    }
+    .offers-left p{
+        font-size: 14px;
+    }
+    .offers-left button{
+        width: 200px;
+        height: 50px;
+        
+        font-size: 18px;
+        margin-top: 25px;
+    }
+}
+@media(max-width:1024px){
+    .offers-right img{
+        width: 200px;
+    }
+}
+@media(max-width:800px){
+    .offers-right{
+        display: none;
+    }
+    .offers{
+        padding: 50px 8%;
+    }
+}
