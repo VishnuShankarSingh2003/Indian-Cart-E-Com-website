@@ -12,8 +12,8 @@ const Shop = () => {
 
   const fetchInfo = () => {
     Promise.all([
-      fetch('http://localhost:4000/popularinwomen').then(res => res.json()),
-      fetch('http://localhost:4000/newcollections').then(res => res.json())
+      fetch('https://indian-cart-e-com-website.onrender.com/popularinwomen').then(res => res.json()),
+      fetch('https://indian-cart-e-com-website.onrender.com/newcollections').then(res => res.json())
     ])
     .then(([popularData, newCollectionData]) => {
       // console.log(popularData)
